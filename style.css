@@ -1,0 +1,59 @@
+
+#cardContainer{
+    padding : 100px;
+    background-color: #062a62;
+    height : 200vh;
+    width : 200vw;
+    position : relative;
+    transform: translate(-25%, -25%);
+    display : flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    overflow: hidden;
+    border: 20px solid black;
+    z-index: 0;
+}
+
+#cardContainer #fruitsText1{
+    min-height : 75vh;
+    min-width : 75vw;
+    top: 0%;
+    left: 10%;
+}
+
+#cardContainer #fruitsText2{
+    min-height : 75vh;
+    min-width : 75vw;
+    bottom: 0%;
+    right: 10%;
+}
+
+#cardContainer div{
+    margin: 100px;
+    border-radius: 8px;
+    transition: opacity 0.45s, transform 0.45s, filter 0.45s;
+    overflow: hidden;
+    opacity : 0.7;
+    z-index: 20;
+    filter: blur(6px);
+    backdrop-filter: blur(10px);
+}
+
+#cardContainer div:hover{
+    transform : scale(1.1);
+    opacity : 1;
+    filter: blur(0px); 
+}
+
+#cardContainer div img {
+    width: 100%; /* Ensure the image fills the entire width of its container */
+    height: 100%; /* Ensure the image fills the entire height of its container */
+    object-fit: cover; /* Resize the image to cover its container while preserving aspect ratio */
+    opacity: 0;
+    transition: opacity 0.45s;
+}
+
+#cardContainer div img:hover {
+    opacity: 1;
+}
