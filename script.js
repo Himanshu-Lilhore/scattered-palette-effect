@@ -11,6 +11,12 @@ let mouseY = 0
 let lastMouseX = 99
 let latsMouseY = 99
 
+setTimeout(function() {
+    document.getElementById('loadingOverlay').style.display = 'none';
+    document.getElementById('content').style.display = 'block';
+}, 2500);
+
+
 window.addEventListener('resize', function() {
     windowHeight = window.innerHeight;
     windowWidth = window.innerWidth;

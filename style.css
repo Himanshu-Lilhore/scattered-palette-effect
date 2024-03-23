@@ -1,3 +1,36 @@
+body{
+    user-select: none;
+}
+
+#loadingOverlay{
+    height : 100%;
+    width : 100%;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    background-color: #4eb3dc;
+    position : absolute;
+    z-index: 40;
+    opacity : 0.9;
+}
+
+.spinner {
+    position : relative;
+    margin : auto;
+    border: 8px solid rgba(0, 0, 0, 0.1); /* Light border */
+    border-top: 8px solid #333; /* Dark border on top */
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    animation: spin 1s linear infinite; /* Rotate animation */
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+
 
 #cardContainer{
     padding : 100px;
